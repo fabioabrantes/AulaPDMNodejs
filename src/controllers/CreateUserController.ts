@@ -1,5 +1,6 @@
 import {Request, Response} from 'express';
-import {CreateUserService, UserRequest} from '../UserCases/CreateUserService';
+import {CreateUserService} from '../UserCases/CreateUserService';
+import {UserRequest} from "../dto/UserRequest";
 
 
 class CreateUserController{

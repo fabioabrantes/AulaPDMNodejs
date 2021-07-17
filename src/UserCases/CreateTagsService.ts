@@ -3,10 +3,8 @@ import {getCustomRepository} from "typeorm";
 import {TagRepository} from '../Repositories/TagRepository';
 import {Tag} from "../entities/Tag";
 import { AppErros } from "../errors/AppErros";
+import {TagRequest} from "../dto/TagRequest";
 
-export type TagRequest = {
-  name:string;
-}
 class CreateTagsService{
   
   async execute({name}:TagRequest): Promise<Tag>{

@@ -5,13 +5,8 @@ import {RepositoryUsers} from '../Repositories/RepositoryUsers';
 
 import {Compliment} from "../entities/Compliment";
 import { AppErros } from "../errors/AppErros";
+import {ComplimentRequest} from "../dto/ComplimentRequest";
 
-export type ComplimentRequest = {
-  message:string;
-  user_receiver:string;
-  user_sender:string;
-  tag_id:string;
-}
 class CreateComplimentService{
   
   async execute({message,user_sender, user_receiver,tag_id}:ComplimentRequest): Promise<Compliment>{

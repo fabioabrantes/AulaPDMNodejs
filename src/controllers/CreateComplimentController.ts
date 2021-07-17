@@ -1,5 +1,6 @@
 import {Request, Response} from 'express';
-import {CreateComplimentService, ComplimentRequest} from '../UserCases/CreateComplimentService';
+import {CreateComplimentService} from '../UserCases/CreateComplimentService';
+import {ComplimentRequest} from "../dto/ComplimentRequest";
 
 
 class CreateComplimentController{

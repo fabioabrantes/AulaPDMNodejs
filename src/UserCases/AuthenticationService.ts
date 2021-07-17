@@ -3,13 +3,9 @@ import {compare} from 'bcryptjs';
 import {sign} from "jsonwebtoken";
 
 import {RepositoryUsers} from '../Repositories/RepositoryUsers';
-import {User} from "../entities/User";
-import { AppErros } from "../errors/AppErros";
 
-export interface IDataAuthenticate{
-  email:string;
-  password:string;
-}
+import { AppErros } from "../errors/AppErros";
+import {IDataAuthenticate} from '../dto/IDataAuthenticate';
 
 class AuthenticationService{
   

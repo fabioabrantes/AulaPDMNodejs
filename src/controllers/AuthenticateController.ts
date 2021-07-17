@@ -1,5 +1,6 @@
 import {Request, Response} from 'express';
-import {AuthenticationService,IDataAuthenticate} from '../UserCases/AuthenticationService';
+import {AuthenticationService} from '../UserCases/AuthenticationService';
+import {IDataAuthenticate} from '../dto/IDataAuthenticate';
 
 
 class AuthenticateController{

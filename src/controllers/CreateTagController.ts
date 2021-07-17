@@ -1,6 +1,6 @@
 import {Request, Response} from 'express';
-import {CreateTagsService, TagRequest} from '../UserCases/CreateTagsService';
-
+import {CreateTagsService} from '../UserCases/CreateTagsService';
+import {TagRequest} from "../dto/TagRequest";
 
 class CreateTagController{
 
