@@ -18,13 +18,13 @@ class CreateComplimentService{
       throw new AppErros("Error: user_receiver invalid", 401);
     }
     //Não é permitido cadastrar elogios para usuários inválidos
-    const userReceiverExists = repositoryUsers.findUserById(user_receiver);
+    const userReceiverExists = await repositoryUsers.findUserById(user_receiver);
     
     if(!userReceiverExists){
       throw new AppErros("Error: user_receiver is not exists", 401);
     }
 
-    const compliment = complimentRepository.createCompliment({
+    const compliment = await complimentRepository.createCompliment({
       message,
       user_sender, 
       user_receiver,

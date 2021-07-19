@@ -19,7 +19,7 @@ class AuthenticationService{
     }
 
     // verificar se senha está correta
-    const passwordCompared = compare(password, user.password);
+    const passwordCompared = await compare(password, user.password);
     if(!passwordCompared){
       throw new AppErros("Email/password invalid",400);
     }
