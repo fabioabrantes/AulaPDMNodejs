@@ -24,7 +24,7 @@ class CreateComplimentService{
       throw new AppErros("Error: user_receiver is not exists", 401);
     }
 
-    const compliment = complimentRepository.create({
+    const compliment = complimentRepository.createCompliment({
       message,
       user_sender, 
       user_receiver,

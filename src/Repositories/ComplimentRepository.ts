@@ -1,9 +1,7 @@
 import {EntityRepository, Repository} from "typeorm";
 import {Compliment} from '../entities/Compliment';
+import {ComplimentRequest} from "../dto/ComplimentRequest";
 
-interface ComplimentRequest {
-  message: string;
-}
 
 @EntityRepository(Compliment)
 class ComplimentRepository extends Repository<Compliment> {
