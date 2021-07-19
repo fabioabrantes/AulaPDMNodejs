@@ -1,12 +1,6 @@
 import {EntityRepository, Repository} from "typeorm";
 import {User} from '../entities/User';
-
-interface UserRequest{
-  name:string;
-  email:string;
-  password:string;
-  admin:boolean;
-}
+import {UserRequest} from "../dto/UserRequest";
 
 @EntityRepository(User)
 class RepositoryUsers extends Repository<User> {
